@@ -55,4 +55,11 @@ function switchLanguage() {
     };
 
     const lang = document.documentElement.lang === "fr" ? "en" : "fr";
-   
+    document.documentElement.lang = lang;
+
+    for (const [key, value] of Object.entries(elements)) {
+        document.getElementById(key).textContent = value[lang];
+    }
+
+    document.querySelector("button").textContent = lang === "fr" ? "English Version" : "Version Française";
+}
