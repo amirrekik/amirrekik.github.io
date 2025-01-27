@@ -3,35 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV</title>
+    <title>Amir Rekik - CV</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Mon CV</h1>
+        <h1>Amir Rekik</h1>
+        <p id="intro">Passionné par l'innovation et le développement de solutions technologiques</p>
         <nav>
             <ul>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#experience">Expérience</a></li>
                 <li><a href="#education">Éducation</a></li>
+                <li><a href="#skills">Compétences</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <button onclick="switchLanguage()">English Version</button>
     </header>
     <section id="about">
         <h2>À propos de moi</h2>
-        <p>Une brève description de toi-même.</p>
+        <p id="about-text">Récemment diplômé avec 3 ans d'expérience en alternance, je suis passionné par l'innovation et le développement de solutions technologiques. Persévérant, polyvalent et rigoureux, je suis motivé par les projets complexes et le travail collaboratif. Je suis prêt à relever de nouveaux défis et à contribuer au succès d'une équipe dynamique.</p>
     </section>
     <section id="experience">
         <h2>Expérience professionnelle</h2>
         <ul>
             <li>
-                <h3>Poste 1</h3>
-                <p>Description du poste 1.</p>
+                <h3>Apprenti Consultant Fonctionnel</h3>
+                <p>CIMPA PLM Services, Sopra Steria, Courbevoie (France) - Septembre 2023 - Septembre 2024</p>
+                <p id="experience1">Consulting, développement et support des outils PLM, définition et suivi des KPI, développement de PoC internes avec AWS et Azure.</p>
             </li>
             <li>
-                <h3>Poste 2</h3>
-                <p>Description du poste 2.</p>
+                <h3>Apprenti Ingénieur en Systèmes Automobiles</h3>
+                <p>STELLANTIS, Poissy (France) - Septembre 2021 - Septembre 2023</p>
+                <p id="experience2">Déploiement de services, gestion de conteneurs (Docker, Kubernetes), concepts cloud (AWS), études de performance des solutions de conteneurisation.</p>
+            </li>
+            <li>
+                <h3>Stage</h3>
+                <p>Centre de Nanosciences et de Nanotechnologies (C2N) – CNRS, Paris (France) - Avril 2021 - Juillet 2021</p>
+                <p id="experience3">PoC de surveillance et régulation de température avec ESP32, serveur web embarqué pour carte électronique.</p>
             </li>
         </ul>
     </section>
@@ -39,24 +50,48 @@
         <h2>Éducation</h2>
         <ul>
             <li>
-                <h3>Diplôme 1</h3>
-                <p>Description du diplôme 1.</p>
+                <h3>Master en Ingénierie</h3>
+                <p>ESILV, Léonard de Vinci Graduate School of Engineering, Paris (France) - 2021 – 2024</p>
+                <p id="education1">Informatique, GPA 3.6</p>
             </li>
             <li>
-                <h3>Diplôme 2</h3>
-                <p>Description du diplôme 2.</p>
+                <h3>DUT en Génie Électrique</h3>
+                <p>IUT de Cachan, Université Paris-Saclay, Paris (France) - 2019 – 2021</p>
+                <p id="education2">GPA 3.7</p>
             </li>
+            <li>
+                <h3>Baccalauréat Scientifique</h3>
+                <p>Lycée Voillaume, Aulnay-Sous-Bois (France)</p>
+                <p id="education3">Mathématiques et Physique, mention bien</p>
+            </li>
+        </ul>
+    </section>
+    <section id="skills">
+        <h2>Compétences</h2>
+        <ul id="skills-list">
+            <li>Programmation : C, C++, C#, Python, Java, GO, Git</li>
+            <li>Script : Shell, Bash</li>
+            <li>Systèmes d'exploitation : Linux, Windows</li>
+            <li>Bases de données : SQL, MySQL, NoSQL, MongoDB</li>
+            <li>Conteneurisation : Docker, Kubernetes, LXC</li>
+            <li>Analyse et visualisation de données, tableau de bord KPI</li>
+            <li>Communication : Simplification des concepts techniques, présentation claire et concise</li>
+            <li>Planification et gestion de projet : Méthodologie Agile/Scrum, ROI, ROE, NPV</li>
+            <li>Analyse et définition des besoins</li>
+            <li>Cloud Computing : Services AWS, Azure, Concept IaaS, PaaS, SaaS</li>
+            <li>Compétences interpersonnelles : Leadership, adaptabilité</li>
+            <li>Bureautique : Word, PPT, Excel</li>
         </ul>
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: ton.email@example.com</p>
-        <p>Téléphone: 0123456789</p>
+        <p>Email: amir.rekik@outlook.com</p>
+        <p>Téléphone: 06.23.38.53.81</p>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/tonprofil" target="_blank">
+            <a href="https://www.linkedin.com/in/amirrekik" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
             </a>
-            <a href="https://github.com/tonprofil" target="_blank">
+            <a href="https://github.com/amirrekik" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="30">
             </a>
         </div>
